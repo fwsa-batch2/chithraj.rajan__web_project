@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-h2{
+/* h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
@@ -18,9 +18,7 @@ button:hover{
     background-color: aqua;
 
 }
-a{
-    text-decoration: none;
-}
+
 #title{
     background-color: aqua;
     font-family: 'Times New Roman', Times, serif;
@@ -35,17 +33,45 @@ a{
     margin-top: 30px;
     border-radius: 30px;
     
-}
-.nav table{
-    text-align: center;
-    /* font-family: 'Lobster', cursive; */
-
-
-}
-.nav table img{
-    height: 55px;
-    width: 55px;
+} */
+.navbar ul li img{
+    height: 25px;
+    width: 25px;
 }
 .navbar{
-    margin-top: 5px;
+    background-color: #2BAE66FF;
+    height: 80px;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+ul{
+    width: auto;
+    margin-top: 8px;
+
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+a:hover{
+    color: blue;
+    transition: 5s;
+
 }
