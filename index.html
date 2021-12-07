@@ -1,69 +1,200 @@
-<html>
-    <head>
-        <style>
-            body {
-                background-image: url('./assets/img/bakground.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: 100% 100%;
-            }
-        </style>
+<!DOCTYPE html>
+<html lang="en">
 
-    </head>
-    <body>
-        <i>
-            <center>
-                <h1 style="color:purple">
-                    <b>
-                        KIDDY-KIDS User Sign-Up</h1>
-                    <b></center>
-                    <marquee>
-                        <h4>Sign up to Join As a member to KIDDY-KIDS<h4></marquee>
-                        </i>
-                        <form>
-                            <center><br><br>
-                                <table border="0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>index.html</title>
+</head>
+<style>
+    body {
+        background-image: url('./assets/img/bakground.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 
-                                    <tr>
-                                        <h3 style="color:white">
-                                            <td>Name:</td>
-                                            <td><input type="text" required="">
-                                            </td>
-                                        </h3>
-                                    </tr>
-                                </td>
-                            </tr>
-                            <tr>
-                                <h3 style="color:white">
-                                    <td>DOB :</td>
-                                    <td><input type="date">
-                                    </td>
-                                </h3>
-                            </tr>
-                        </td>
+    /* .mainbody{
+                height: 500px;
+                width: 600px;
+                background-color: white;
+            } */
+    td {
+        font-size: 20px;
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    button {
+        border-radius: 15px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    form {
+        margin-left: 25px;
+    }
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 70px;
+
+    }
+</style>
+
+<body>
+    <i>
+        <center>
+            <div>
+                <h1>Kiddy-Kids</h1>
+            </div>
+            <marquee>
+                <h4>Sign up to Join As a member to KIDDY-KIDS<h4>
+            </marquee>
+    </i>
+    <center>
+        <form action="/pages/Story.html" onsubmit="userData()">
+            <br><br>
+            <div>
+                <table border="0">
+
+                    <tr>
+                        <h3 style="color:white">
+                            <td>Name:</td>
+                            <td><input id="name" type="text" class="form" required placeholder="Enter your full name">
+                            </td>
+                        </h3>
+                    </tr>
+                    </td>
+                    </tr>
+                    <tr>
+                        <h3 style="color:white">
+                            <td>DOB :</td>
+                            <td><input id="dob" type="date" required>
+                            </td>
+                        </h3>
+                    </tr>
+                    </td>
                     </tr>
                     <tr>
                         <h3 style="color:white">
                             <td>E-mail:</td>
-                            <td><input type="text">
+                            <td><input id="email" type="text" required>
                             </td>
                         </h3>
                     </tr>
-                </td>
-            </tr>
-            <tr>
-                <h3 style="color:white">
-                    <td>Password:</td>
-                    <td><input type="password">
                     </td>
-                </h3>
-            </tr>
-        </td>
+                    </tr>
+                    <tr>
+                        <h3 style="color:white">
+                            <td>Password:</td>
+                            <td><input id="password" type="password" required>
+                            </td>
+                        </h3>
+                    </tr>
+                    </td>
+</body>
+
+</html>
+</div>
+</center>
+</body>
+
+</html>
+</tr>
+<tr>
+    <h3 style="color:white">
+        <td>Age:</td>
+        <td><input type="number"></td>
+    </h3>
+</tr>
+</td>
+</tr>
+<tr>
+    <h3 style="color:white">
+        <td>Gender:</td>
+        <td><input type="radio" name="Gender">male<input type="radio" name="Gender">female</td>
+    </h3>
+</tr>
+</td>
+</tr>
+<tr>
+    <h3 style="color:white">
+        <td>Favorite Food :</td>
+        <td><input type="text"></td>
+    </h3>
+</tr>
+</td>
+</tr>
+<tr>
+    <h3 style="color:white">
+        <td>Favorite Pet :</td>
+        <td><input type="text"></td>
+    </h3>
+</tr>
+</td>
+</tr>
+<tr>
+    <h3 style="color:white">
+        <td>Favorite Movie :</td>
+        <td><input type="text"></td>
+    </h3>
+</tr>
+</td>
+</tr>
+<tr>
+    <td></td>
+</tr>
+</center>
+</table>
+</form><button type="submit">
+    <h3>Submit</h3>
+</button>
+<h2>If you feel bored....Let's play Snake...</h2><a
+    href="https://www.google.com/search?q=google+snake&oq=google+s&aqs=chrome.4.69i57j0i433i512j69i59j0i433i512l2j69i60l3.8049j0j7&sourceid=chrome&ie=UTF-8">Snake
+    Game</a>
+<p>Already a member<a href="./pages/Story.html">Login</a></p>
+<center><i>
+        <h2>"The stories we tell literally make the world.</center></i></h2>
+<center><i>
+        <h2>If you want to change the world, you need to change your story. This truth applies both to individuals and
+            institutions." --Michael Margolis</h2>
+    </i></p>
+    <script>function userData() {
+            let name = document.getElementById("name").value;
+            let dob = document.getElementById("dob").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            const userDetails = {
+                "name": name,
+                "dob": dob,
+                "email": email,
+                "password": password
+
+            }
+
+            
+
+            localStorage.setItem("userInfo", JSON.stringify(userDetails));
+            console.log(localStorage.getItem("userInfo"));
+
+
+        }</script>
     </body>
-</html></tr><tr>
-<h3 style="color:white">
-    <td>Age:</td>
-    <td><input type="number">
-    </td>
-</h3></tr></td></tr><tr><h3 style="color:white"><td>Gender:</td><td><input type="radio" name="Gender">male
-<input type="radio" name="Gender">female</td></h3></tr></td></tr><tr><h3 style="color:white"><td>Favorite Food :</td><td><input type="text"></td></h3></tr></td></tr><tr><h3 style="color:white"><td>Favorite Pet :</td><td><input type="text"></td></h3></tr></td></tr><tr><h3 style="color:white"><td>Favorite Movie :</td><td><input type="text"></td></h3></tr> </td></tr><tr> <td><button><h3><a href="/pages/Story.html">Submit</a></h3></button> </td></tr></center></table></form><h2>If you feel bored....Let's play Snake...</h2><a href="https://www.google.com/search?q=google+snake&oq=google+s&aqs=chrome.4.69i57j0i433i512j69i59j0i433i512l2j69i60l3.8049j0j7&sourceid=chrome&ie=UTF-8">Snake Game</a><p>Already a member<a href="./pages/Story.html">Login</a></p><center><i><h2>"The stories we tell literally make the world.</center></i></h2><center><i><h2>If you want to change the world, you need to change your story. This truth applies both to individuals and institutions." --Michael Margolis</h2></i></p>
+
+    </html>
