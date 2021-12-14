@@ -17,9 +17,9 @@
                 let confirmPassword = document.getElementById("confirmpassword").value;
                 let emailId = isEmailExist(email);
                 if (password != confirmPassword) {
-                    alert("password invalid");
+                    alert("Invalid credentials");
                 } else if (emailId) {
-                    alert("this email already exist");
+                    alert("Invalid credentials");
                 } else {
                     let userData = {
                         "userName": userName,
