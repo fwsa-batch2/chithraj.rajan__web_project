@@ -1,0 +1,134 @@
+
+        * {
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+        }
+        body {
+            background-attachment: fixed;
+            background-color: black;
+            background-image: url('/assets/img/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==.jpeg');
+
+
+            background-size: 100%;
+
+
+        }
+        .container {
+            height: 700px;
+            width: 1200px;
+            background-color: black;
+            margin-top: 55px;
+            margin-left: 280px;
+            border-radius: 40px;
+            /* background-image: url(/assets/img/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==.jpeg); */
+
+            /* border: 5px solid white; */
+
+
+        }
+
+        input {
+            height: 45px;
+            width: 300px;
+            margin-left: 700px;
+            border-radius: 15px;
+            border: 1px solid #ff69b4;
+            color: #ff69b4;
+            padding-left: 10px;
+
+        }
+
+        #title {
+
+            height: 45px;
+            width: 309px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        #role {
+
+            height: 45px;
+            width: 309px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        #role {
+
+            height: 45px;
+            width: 309px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        #grade {
+
+            height: 45px;
+            width: 309px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        label {
+            margin-left: 700px;
+            font-weight: bold;
+
+        }
+        select {
+            margin-left: 700px;
+            border: 1px solid #ff69b4;
+            color: #ff69b4;
+            padding-left: 10px;
+
+        }
+        .user {
+            margin-left: 100px;
+
+        }
+        button {
+            /* margin-top: 55px; */
+            margin-left: 775px;
+            height: 50px;
+            color: white;
+            border-radius: 15px;
+            background-color: rgb(238, 130, 238);
+
+        }
+        option {
+            color: #ff69b4;
+        }
+        button:hover {
+            background-color: red;
+            transition: 1s;
+            color: white;
+
+        }
+        #logo {
+            height: 400px;
+            width: auto;
+            margin-top: 100px;
+            position: absolute;
+            left: 400px;
+            top: 70px;
+            border-radius: 50%;
+
+
+        }
+        table {
+            flex-wrap: wrap;
+        }
+        #text {
+            position: absolute;
+            top: 550px;
+            left: 465px;
+            font-size: 40px;
+        }
+        #welcome {
+            position: absolute;
+            top: 30px;
+            left: 440px;
+            font-size: 70px;
+        }
+        a {
+            text-decoration: none;
+        }
+    
