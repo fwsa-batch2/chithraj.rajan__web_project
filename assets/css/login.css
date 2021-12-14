@@ -1,6 +1,6 @@
 
 * {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Dancing Script', cursive;
     color: white;
 }
@@ -20,8 +20,8 @@ body {
     background-color: rgb(0, 0, 0);
     border-radius: 40px;
     position: absolute;
-    top: 70px;
-    left: 280px;
+    top: 90px;
+    left: 370px;
     box-shadow: 0 0 30px 30px white;
 
 
@@ -29,8 +29,8 @@ body {
 
 input {
     height: 45px;
-    width: 300px;
-    margin-left: 700px;
+    width: 350px;
+    margin-left: 750px;
     border-radius: 15px;
     border: 1px solid #ff69b4;
     color: #ff69b4;
@@ -68,7 +68,7 @@ input {
 }
 
 label {
-    margin-left: 700px;
+    margin-left: 750px;
     font-weight: bold;
 
 }
@@ -85,8 +85,13 @@ select {
 }
 button {
     /* margin-top: 55px; */
-    margin-left: 775px;
-    height: 50px;
+    /* margin-top: -50px;
+    margin-left: 775px; */
+    position: absolute;
+    top: 400px;
+    left: 875px;
+    height: 60px;
+    width: 130px;
     color: white;
     border-radius: 15px;
     background-color: rgb(238, 130, 238);
@@ -106,8 +111,8 @@ button:hover {
     width: auto;
     margin-top: 100px;
     position: absolute;
-    left: 100px;
-    top: -50px;
+    left: 160px;
+    top: -10px;
     border-radius: 50%;
 
 
@@ -117,14 +122,14 @@ table {
 }
 #text {
     position: absolute;
-    top: 420px;
-    left: 150px;
+    top: 450px;
+    left: 200px;
     font-size: 40px;
 }
 #welcome {
     position: absolute;
-    top: -90px;
-    left: 140px;
+    top: -60px;
+    left: 220px;
     font-size: 70px;
 }
 #invalid {
@@ -144,4 +149,16 @@ table {
     top: 130px;
     left: 300px;
 
+}
+p{
+    position: absolute;
+    left: 790px;
+    top: 325px;
+    font-size: 30px;
+}
+.check{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 20px;
 }
