@@ -24,7 +24,7 @@
                     alert("Invalid login credentials");
                 }
                 if (password === true && emailId === true) {
-                    window.location.href = "/Story/Kiddy Home.html";
+                    window.location.href = "/pages/storyhome.html";
                 }
 
                 // else{
