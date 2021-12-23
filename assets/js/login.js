@@ -23,6 +23,7 @@
                 if (emailId == false) {
                     alert("Invalid login credentials");
                 }
+
                 if (password === true && emailId === true) {
                     window.location.href = "/pages/storyhome.html";
                 }
@@ -68,7 +69,7 @@
             }
 
             function visibleValue() {
-                const visiblePassword = document.getElementById("password");
+                // const visiblePassword = document.getElementById("password");
                 const vari = document.getElementById("check");
 
                 if (vari.checked) {

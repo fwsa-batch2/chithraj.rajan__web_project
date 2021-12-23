@@ -14,7 +14,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100%;
-            background-opacity: ;
+            
         }
         #title {
             position: absolute;
@@ -111,8 +111,9 @@
         #images img:hover{
             transition: 1.5s;
             opacity: 0.9;
-            box-shadow: 0 0 10px 10px black;
+            box-shadow: 0 0 50px 5px black;
             height: 410px;
+            width: auto;
             display: flex;
             
         }
@@ -130,14 +131,23 @@
             height: 400px;
             margin-top: 300px;
             border-radius: 20px;
-            box-shadow: 0 0 10px 10px white;
+            box-shadow: 0 0 5px 5px white;
+            
+        }
+        #image img{
+            position: absolute;
+            height: 400px;
+            margin-top: 760px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 5px white;
             
         }
         #image img:hover{
             transition: 1.5s;
             opacity: 0.9;
-            box-shadow: 0 0 10px 10px black;
+            box-shadow: 0 0 50px 5px black;
             height: 410px;
+            width: auto;
             display: flex;
             
         }
@@ -149,15 +159,105 @@
         }
         .img01{
             left: 90px;
+            
         }
+        #imag img{
+            position: absolute;
+            height: 400px;
+            margin-top: 1260px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 5px white;
+            
+        }
+        #imag img:hover{
+            transition: 1.5s;
+            opacity: 0.9;
+            box-shadow: 0 0 50px 5px black;
+            height: 410px;
+            width: auto;
+            display: flex;
+            
+        }
+        .img002{
+            left: 720px;
+    
+        }
+        #footer{
+            background-color: white;
+            position: absolute;
+            top: 2000px;
+            left: 3px;
+            height: 200px;
+            width: 1900px;
+            border-radius: 20px;
+        }
+        #fb{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 30px;
+            left: 600px;
+            height: 50px;
+        }
+        #insta{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 30px;
+            left: 750px;
+            height: 50px;
+        }
+        #twiter{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 30px;
+            left: 900px;
+            height: 50px;
+        }
+        #yt{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 30px;
+            left: 1050px;
+            height: 50px;
+        }
+        #ln{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 30px;
+            left: 1200px;
+            height: 50px;
+        }
+        #cr{
+            position: absolute;
+            /* border-radius: 30px; */
+            top: 120px;
+            left: 650px;
+            height: 20px;
+        }
+        #cr1{
+            position: absolute;
+            left: 700px;
+            top: 100px;
+            font-family: 'Fuzzy Bubbles', cursive;
+            font-size: 20px;
+
+        }
+        #cr2{
+            position: absolute;
+            left: 550px;
+            top: 125px;
+            font-family: 'Fuzzy Bubbles', cursive;
+            font-size: 20px;
+
+        }
+
 
     </style>
     <body>
         <img src="/assets/img/Pink Script Signature Beauty Skincare o.png" alt="title" id="title">
-        <div class="main"></div>
+        
 
         <div id="navbar">
-            <a href="#">
+            <a href="/pages/storyhome.html">
                 <p id="home">Home</p>
             </a>
             <a href="#">
@@ -181,10 +281,30 @@
             <a href="#"><img src="/assets/img/1447396138.jpg" alt="img" class="img2"></a>
             <a href="#"><img src="/assets/img/f3cea468f01a0c8d4a3f8c564980de96.jpg" alt="img" class="img3"></a>
         </div>
-        <!-- <div id="image">
-            <a href="#"><img src="/assets/img/moral-stories-1.jpg" alt="img" class="img01"></a>
-            <a href="#"><img src="/assets/img/1447396138.jpg" alt="img" class="img02"></a>
-            <a href="#"><img src="/assets/img/f3cea468f01a0c8d4a3f8c564980de96.jpg" alt="img" class="img03"></a>
-        </div> -->
+        <br>
+        <div id="image">
+            <a href="#"><img src="/assets/img/maxresdefault.jpg" alt="img" class="img01"></a>
+            <a href="#"><img src="/assets/img/ab67616d0000b2736517df1ee63849872f4684c3.jpeg" alt="img" class="img02"></a>
+            <a href="#"><img src="/assets/img/myths_and_legends_of_the_world.jpg" alt="img" class="img03"></a>
+        </div>
+        <div id="imag">
+            
+            <a href="#"><img src="/assets/img/61jlEThDe3L.jpg" alt="img" class="img002"></a>
+            
+            
+        </div>
+
+        <div id="footer">
+            <img src="/assets/img/facebook.png" id="fb">
+            <img src="/assets/img/instagram.png" id="insta">
+            <img src="/assets/img/twitter.png" alt="" id="twiter">
+            <img src="/assets/img/youtube.png" alt="" id="yt">
+            <img src="/assets/img/linkedin.png" alt="" id="ln">
+            <img src="/assets/img/copyright.png" alt="" id="cr">
+            <p id="cr1">2015-2021 Kiddy-Kids.Inc. All rights reserved.</p>
+            <p id="cr2">Kiddy-Kids, and the cog logo service marks are owned by Kiddy-Kids.Inc</p>
+        </div>
+
+        
     </body>
 </html>
