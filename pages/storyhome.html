@@ -179,12 +179,12 @@
             <div class="navbar">
                 <button>
                     <a href=""><p id="home">Home</p></a></button>
-                <select name="Categories" id="cat">
-                    <option value="">Categories</option>
-                    <a href="/pages/storyscotent.html"><option value="">Stories</option></a>
-                    <option value="">Poems</option>
-                    <option value="">Kids-Videos</option>
-                    <option value="">Comics</option>
+                <select onchange="displayCategory(this.value)" name="Categories" id="cat">
+                    <option>Categories</option>
+                    <option value="stories">Stories</option>
+                    <option value="poems">Poems</option>
+                    <option value="videos">Kids-Videos</option>
+                    <option value="comics">Comics</option>
 
                 </select>
                 </button>
@@ -211,5 +211,22 @@
         </div>
         <a href="#"><img src="/assets/img/backward (1).png" alt="back" id="back"></a>
         <a href="/pages/storyhome2.html"><img src="/assets/img/fast-forward.png" alt="forward" id="front"></a>
+        <script>
+            function displayCategory(value){
+                switch(value){
+                case "stories":
+                    window.location.href = "storyscotent.html"
+                case "poems":
+                window.location.href = "storyscotent.html"
+                case "videos":
+                window.location.href = "storyscotent.html"
+                case "comics":
+                window.location.href = "storyscotent.html"
+
+
+                }
+            }
+
+        </script>
         </body>
         </html>

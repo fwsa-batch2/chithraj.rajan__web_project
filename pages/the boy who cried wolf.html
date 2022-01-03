@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/assets/img/New Project (3).png">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/New Project (3).png">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&family=Shalimar&display=swap" rel="stylesheet">
-        <title>Kids Stories.html</title>
-    </head>
+    <title>The Boy Who Cried Wolf</title>
     <style>
-        body {
-            background-image: url('/assets/img/uj100mdp8ep51.jpg');
+        body{
+            background-image: url(/assets/img/fantasy-magical-landscape-rainbow-on-600w-1049693714.webp);
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: 100%;
-
+            background-color: pink;
+            background-attachment: fixed;
         }
-        #title {
+        #main img{
+           position: absolute;
+           left: 260px;
+           top: 400px;
+           border-radius: 30px;
+         }
+           #title {
             position: absolute;
             left: 80px;
             border-radius: 30px;
@@ -108,92 +113,10 @@
             color: rgb(255, 255, 255);
             font-family: 'Fuzzy Bubbles', cursive;
         }
-        #images img {
-            position: absolute;
-            height: 400px;
-            margin-top: 300px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px 10px white;
-
-        }
-        #images img:hover {
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px black;
-            height: 410px;
-            width: auto;
-            display: flex;
-
-        }
-        .img3 {
-            left: 1370px;
-        }
-        .img2 {
-            left: 720px;
-        }
-        .img1 {
-            left: 90px;
-        }
-        #images img {
-            position: absolute;
-            height: 400px;
-            margin-top: 300px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-
-        }
-        #image img {
-            position: absolute;
-            height: 400px;
-            margin-top: 760px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-
-        }
-        #image img:hover {
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px black;
-            height: 410px;
-            width: auto;
-            display: flex;
-
-        }
-        .img03 {
-            left: 1370px;
-        }
-        .img02 {
-            left: 720px;
-        }
-        .img01 {
-            left: 90px;
-
-        }
-        #imag img {
-            position: absolute;
-            height: 400px;
-            margin-top: 1260px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-
-        }
-        #imag img:hover {
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px black;
-            height: 410px;
-            width: auto;
-            display: flex;
-
-        }
-        .img002 {
-            left: 720px;
-
-        }
         #footer {
             background-color: white;
             position: absolute;
-            top: 2000px;
+            top: 2300px;
             left: 3px;
             height: 200px;
             width: 1900px;
@@ -257,10 +180,22 @@
             font-size: 20px;
 
         }
-        
+        #back{
+            height: 100px;
+            position: absolute;
+            top: 250px;
+            left: 50px;
+        }
+        #next{
+            height: 100px;
+            position: absolute;
+            top: 250px;
+            left: 1750px;
+        }
     </style>
-    <body>
-        <img src="/assets/img/Pink Script Signature Beauty Skincare o.png" alt="title" id="title">
+</head>
+<body>
+    <img src="/assets/img/Pink Script Signature Beauty Skincare o.png" alt="title" id="title">
 
 
         <div id="navbar">
@@ -287,47 +222,27 @@
             <p>"Great stories happen to those who can tell them."</p>
 
         </div>
+        <a href="/pages/moral stories.html"><img src="/assets/img/delete.png" alt="back" id="back"></a>
+        <a href="/pages/fox and the grapes.html"><img src="/assets/img/next.png" alt="next" id="next"></a>
+    <div id="main">
+        <img src="/assets/img/the boy.jpg" alt="">
+    </div>
 
-        <div id="images" >
-
-            <img src="/assets/img/moral-stories-1.jpg" alt="img" class="img1" onclick="goMoral()">
-            <img src="/assets/img/1447396138.jpg" alt="img" class="img2" onclick="goPancha()">
-            <img src="/assets/img/f3cea468f01a0c8d4a3f8c564980de96.jpg" alt="img" class="img3" onclick="goShort()">
-        </div>
-        <br>
-        <div id="image">
-            <a href="#"><img src="/assets/img/maxresdefault.jpg" alt="img" class="img01"></a>
-            <a href="#"><img src="/assets/img/ab67616d0000b2736517df1ee63849872f4684c3.jpeg" alt="img" class="img02"></a>
-            <a href="#"><img src="/assets/img/myths_and_legends_of_the_world.jpg" alt="img" class="img03"></a>
-        </div>
-        <div id="imag">
-
-            <a href="#"><img src="/assets/img/61jlEThDe3L.jpg" alt="img" class="img002"></a>
-
-
-        </div>
-
-        <div id="footer">
-            <a href="https://www.facebook.com/" target="_blank"><img src="/assets/img/facebook.png" id="fb"></a>
-            <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="/assets/img/instagram.png" id="insta"></a>
-            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src="/assets/img/twitter.png" alt="" id="twiter"></a>
-            <a href="https://www.youtube.com/results?search_query=kiddy+kids" target="_blank"><img src="/assets/img/youtube.png" alt="" id="yt"></a>
-            <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=545833659295_kw=linkedin%20login_d=c_tid=kwd-12704335873_n=g_mt=e_geo=1007809_slid=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9K-qDD-vNR18R8HQUev04_w6Y_LwIk9apUg3AUe9UFjqruwZne004MaAlG1EALw_wcB&gclsrc=aw.ds" target="_blank"><img src="/assets/img/linkedin.png" alt="" id="ln"></a>
-            <img src="/assets/img/copyright.png" alt="" id="cr">
-            <p id="cr1">2015-2021 Kiddy-Kids.Inc. All rights reserved.</p>
-            <p id="cr2">Kiddy-Kids, and the cog logo service marks are owned by Kiddy-Kids.Inc</p>
-        </div>
-
-
-    </body>
+    <div id="footer">
+        <a href="https://www.facebook.com/" target="_blank"><img src="/assets/img/facebook.png" id="fb"></a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="/assets/img/instagram.png" id="insta"></a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src="/assets/img/twitter.png" alt="" id="twiter"></a>
+        <a href="https://www.youtube.com/results?search_query=kiddy+kids" target="_blank"><img src="/assets/img/youtube.png" alt="" id="yt"></a>
+        <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=545833659295_kw=linkedin%20login_d=c_tid=kwd-12704335873_n=g_mt=e_geo=1007809_slid=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9K-qDD-vNR18R8HQUev04_w6Y_LwIk9apUg3AUe9UFjqruwZne004MaAlG1EALw_wcB&gclsrc=aw.ds" target="_blank"><img src="/assets/img/linkedin.png" alt="" id="ln"></a>
+        <img src="/assets/img/copyright.png" alt="" id="cr">
+        <p id="cr1">2015-2021 Kiddy-Kids.Inc. All rights reserved.</p>
+        <p id="cr2">Kiddy-Kids, and the cog logo service marks are owned by Kiddy-Kids.Inc</p>
+    </div>
+    <img src="/pages/moral stories.html" alt="">
     <script>
-        function goMoral(){
-            window.location.href="moral stories.html"
+        function goback(){
+            window.location.href="/pages/moral stories.html"
         }
-        function goPancha(){
-            window.location.href="panchatantra stories.html"
-        }
-    
         function displayCategory(value){
                 switch(value){
                 case "stories":
@@ -342,7 +257,6 @@
 
                 }
             }
-            
     </script>
-
+</body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>added stroies</title>
+</head>
+<style>
+    body{
+        background-image: url(/assets/img/Nice\ blue\ background\ Desktop\ hd\ Wallpaper\ and\ make\ this\ wallpaper\ for.jpg);
+    }
+    #main{
+        background-color: salmon;
+        height: 600px;
+        width: 1200px;
+        position: absolute;
+        top: 170px;
+        left: 360px;
+        border-radius: 30px;
+        background-image: url(/assets/img/Nice\ Background\ Design\ For\ Powerpoint\ \ \ clipartsgramcom.jpg);
+        box-shadow: seashell 0px 0px 10px 10px;
+
+    }
+    /* #imgUrl{
+        position: absolute;
+        top: 100px;
+        left: 650px;
+    }
+    #stitle{
+        position: absolute;
+        top: 200px;
+        left: 650px;
+    } */
+</style>
+<body>
+    <form onsubmit="addStory(event)">
+        <div id="main">
+            <label for="storyImg">Poster Url</label>
+            <input type="text" placeholder="Enter the image url" id="imgUrl">
+            <br>
+            <label for="title">Story Title</label>
+            <input type="text" placeholder="Enter the Story Title" id="stitle">
+            <br>
+            <label for="title">Story Title</label>
+            <textarea id="storyContent" cols="30" rows="10"></textarea>
+            <button type="submit">Add</button>
+    
+        </div>
+    </form>
+    
+    <script src="./../assets/js/addingmoralstories.js"></script>
+</body>
+</html>
