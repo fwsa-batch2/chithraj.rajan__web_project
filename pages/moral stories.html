@@ -5,328 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/assets/img/New Project (3).png">
+        <link rel="stylesheet" href="./../assets/css/moralStories.css">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@700&family=Gwendolyn:wght@700&family=Kalam&family=Lobster&family=Righteous&family=Shalimar&family=Shizuru&family=Twinkle+Star&display=swap" rel="stylesheet">
         <title>Moral Stories.html</title>
     </head>
-    <style>
-        body {
-            background-image: url('/assets/img/AlertMerryFugu-size_restricted.gif');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            
-        }
-        #title {
-            position: absolute;
-            left: 80px;
-            border-radius: 30px;
-            top: 30px;
-
-        }
-        .navbar {
-            position: absolute;
-            left: 1000px;
-        }
-        button {
-            background-color: transparent;
-            border: none;
-        }
-        a {
-            text-decoration: none;
-
-        }
-        #navbar {
-            height: 75px;
-            width: 1100px;
-            background-color: white;
-            position: absolute;
-            top: 30px;
-            left: 670px;
-            border-radius: 25px;
-
-        }
-        #navbar1 {
-            height: 75px;
-            width: 1100px;
-            background-color: black;
-            position: absolute;
-            top: 120px;
-            left: 670px;
-            border-radius: 25px;
-
-        }
-        #home {
-            position: absolute;
-            left: 100px;
-            top: -10px;
-        }
-        #home:hover {
-            color: blueviolet;
-        }
-        #cat {
-            position: absolute;
-            left: 240px;
-            top: -10px;
-        }
-        #cat:hover {
-            color: orange;
-        }
-        #fun {
-            position: absolute;
-            left: 450px;
-            top: -10px;
-        }
-        #fun:hover {
-            color: palevioletred;
-        }
-        #us {
-            position: absolute;
-            left: 630px;
-            top: -10px;
-        }
-        #us:hover {
-            color: red;
-        }
-        #navbar p {
-            font-size: 30px;
-            margin-left: 100px;
-            color: #000;
-            font-family: 'Fuzzy Bubbles', cursive;
-        }
-        #navbar1 p {
-            font-size: 30px;
-            margin-left: 150px;
-            margin-top: 17px;
-            color: rgb(255, 255, 255);
-            font-family: 'Fuzzy Bubbles', cursive;
-        }
-        #images img{
-            position: absolute;
-            height: 400px;
-            margin-top: 300px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px 10px white;
-            
-        }
-        #images img:hover{
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px violet;
-            height: 290px;
-            width: auto;
-            display: flex;
-            
-        }
-        .img4{
-            left: 1400px;
-        }
-        .img3{
-            left: 1000px;
-        }
-        .img2{
-            left: 600px;
-        }
-        .img1{
-            left: 200px;
-        }
-        #images img{
-            position: absolute;
-            height: 280px;
-            margin-top: 300px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-            
-        }
-        #image img{
-            position: absolute;
-            height: 280px;
-            margin-top: 760px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-            
-        }
-        #image img:hover{
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px violet;
-            height: 290px;
-            width: auto;
-            display: flex;
-            
-        }
-        .img04{
-            left: 1400px;
-        }
-        .img03{
-            left: 1000px;
-        }
-        .img02{
-            left: 600px;
-        }
-        .img01{
-            left: 200px;
-            
-        }
-        #imag img{
-            position: absolute;
-            height: 280px;
-            margin-top: 1260px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-            
-        }
-        #imag img:hover{
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px violet;
-            height: 290px;
-            width: auto;
-            display: flex;
-            
-        }
-        .img001{
-            left: 200px;
     
-        }
-        .img002{
-            left: 600px;
-    
-        }
-        .img003{
-            left: 1000px;
-    
-        }
-        .img004{
-            left: 1400px;
-    
-        }
-        #im img{
-            position: absolute;
-            height: 280px;
-            margin-top: 1760px;
-            border-radius: 20px;
-            box-shadow: 0 0 5px 5px white;
-            
-        }
-        #im img:hover{
-            transition: 1.5s;
-            opacity: 0.9;
-            box-shadow: 0 0 50px 5px violet;
-            height: 290px;
-            width: auto;
-            display: flex;
-            
-        }
-        .img0001{
-            left: 200px;
-    
-        }
-        .img0002{
-            left: 600px;
-    
-        }
-        .img0003{
-            left: 1000px;
-    
-        }
-        .img0004{
-            left: 1400px;
-    
-        }
-        #footer{
-            background-color: white;
-            position: absolute;
-            top: 2600px;
-            left: 3px;
-            height: 200px;
-            width: 1900px;
-            border-radius: 20px;
-        }
-        #fb{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 30px;
-            left: 600px;
-            height: 50px;
-        }
-        #insta{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 30px;
-            left: 750px;
-            height: 50px;
-        }
-        #twiter{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 30px;
-            left: 900px;
-            height: 50px;
-        }
-        #yt{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 30px;
-            left: 1050px;
-            height: 50px;
-        }
-        #ln{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 30px;
-            left: 1200px;
-            height: 50px;
-        }
-        #cr{
-            position: absolute;
-            /* border-radius: 30px; */
-            top: 120px;
-            left: 650px;
-            height: 20px;
-        }
-        #cr1{
-            position: absolute;
-            left: 700px;
-            top: 100px;
-            font-family: 'Fuzzy Bubbles', cursive;
-            font-size: 20px;
-
-        }
-        #cr2{
-            position: absolute;
-            left: 550px;
-            top: 125px;
-            font-family: 'Fuzzy Bubbles', cursive;
-            font-size: 20px;
-
-        }
-        #main{
-            margin-top: 130px ;
-        }
-        .topic{
-            position: absolute;
-            font-family: 'Fuzzy Bubbles', cursive;
-            font-size: 50px;
-            color: white;
-            top: 220px;
-            left: 820px;
-        }
-        #add{
-            position: absolute;
-            top: 2300px;
-            left: 800px;
-        }
-        #add img{
-            height: 80px;
-
-        }
-        #add img:hover{
-            opacity: 0.7;
-        }
-
-
-
-    </style>
     <body>
         <img src="/assets/img/Pink Script Signature Beauty Skincare o.png" alt="title" id="title">
         
@@ -354,19 +37,20 @@
         <div id="main">
             <div id="images">
                 <img src="/assets/img/TR34_768x.jpg" alt="img" class="img1" onclick="goWolf()">
-                <img src="/assets/img/IMG_1605_ba05f4c5-fe12-48e0-93b2-6f4a6bbb75bb_360x.jpg" alt="img" class="img2">
-                <img src="/assets/img/download (4).jpeg" alt="img" class="img3" onclick="goFox()">
+                <img src="/assets/img/71vp8DPotfL.jpg" alt="img" class="img2">
+                <img src="/assets/img/fox_grapes_4x.png" alt="img" class="img3" onclick="goFox()">
                 <a href="#"><img src="/assets/img/55114250._SX318_.jpg" alt="img" class="img4"></a>
             </div>
             </div>
             <br>
             <div id="image">
-                <a href="#"><img src="/assets/img/51RpIG8sf5L.jpg" alt="img" class="img01"></a>
-                <a href="#"><img src="/assets/img/The Potato, egg,and the coffee beans (1).png" alt="img" class="img02"></a>
+                <span><img src="./../assets/img/rm245-bb-62.jpg" alt="demo"></span>
+                <!-- <a href="#"><img src="/assets/img/51RpIG8sf5L.jpg" alt="img" class="img01"></a>
+                <a href="#"><img src="/assets/img/461570a.jpg" alt="img" class="img02"></a>
                 <a href="#"><img src="/assets/img/51z2RAUkXXL.jpg" alt="img" class="img03"></a>
-                <a href="#"><img src="/assets/img/f9cedc8e9bf9b1a61b6c3993422adc38.jpg" alt="img" class="img04"></a>
+                <a href="#"><img src="/assets/img/f9cedc8e9bf9b1a61b6c3993422adc38.jpg" alt="img" class="img04"></a> -->
             </div>
-            <div id="imag">
+            <!-- <div id="imag">
                 
                 <a href="#"><img src="/assets/img/919HegX0aKL.jpg" alt="img" class="img001"></a>
                 <a href="#"><img src="/assets/img/dog.png" alt="img" class="img002"></a>
@@ -374,9 +58,9 @@
                 <a href="#"><img src="/assets/img/crow.png" alt="img" class="img004"></a>
                 
                 
-            </div>
+            </div> -->
     
-            <div id="im">
+            <!-- <div id="im">
                 
                 <a href="#"><img src="/assets/img/71yLaX14TkL.jpg" alt="img" class="img0001"></a>
                 <a href="#"><img src="/assets/img/milk.png" alt="img" class="img0002"></a>
@@ -384,7 +68,7 @@
                 <a href="#"><img src="/assets/img/knock.png" alt="img" class="img0004"></a>
                 
                 
-            </div>
+            </div> -->
             <div id="add">
                 <a href="/pages/addingpage.html"><img src="/assets/img/clipart664409 (1).png" alt="add"></a>
             </div>
@@ -410,7 +94,10 @@
         function goFox(){
             window.location.href="/pages/fox and the grapes.html"
         }
+
+
         </script>
+        <script src="./../assets/js/addMoralStories.js"></script>
         
     </body>
 </html>

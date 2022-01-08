@@ -2,9 +2,9 @@ let storyInArray = [];
 function addStory(event) {
     event.preventDefault();
 
-    let poster = document.getElementById("imgUrl").value;
-    let title = document.getElementById("stitle").value;
-    let mainStory = document.getElementById("storyContent").value;
+    const poster = document.getElementById("imgUrl").value;
+    const title = document.getElementById("stitle").value;
+    const mainStory = document.getElementById("storyContent").value;
 
     const storyDetails = {
         "storyTitle": title,
@@ -13,19 +13,22 @@ function addStory(event) {
     };
 
     let validatingStoryTitle = validateStories(title);
+    
     if (validatingStoryTitle) {
         alert("This story name is already existed");
-        return;
+        return
     }
+
     storyInArray.push(storyDetails);
 
     console.log(storyInArray);
 
     const storyDetailsInString = JSON.stringify(storyInArray);
     localStorage.setItem("stories", storyDetailsInString);
+
+    window.location.href="./../pages/moral stories.html";
+
     onPageLoad();
-    console.log(storyDetailsInString);
-    window.location.href="/moral stories.html"
 }
 
 function onPageLoad(){
@@ -34,16 +37,14 @@ function onPageLoad(){
     if (storyDetailsInParse == null){
        localStorage.setItem("stories","[]");
     }
+
     console.table(storyDetailsInParse);
 
     storyInArray = storyDetailsInParse;
-
-
-
-    
-    
 }
+
 onPageLoad();
+
 function validateStories(storyName){
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
 
@@ -51,8 +52,10 @@ function validateStories(storyName){
     if(storyDetailsInParse!= null){
 
     
-    for (let i of storyDetailsInParse){
-        const storyList = storyDetailsInParse[i].title;
+    for (let i =0;i<storyDetailsInParse.length;i++){
+
+        const storyList = storyDetailsInParse[i].storyTitle;
+        console.log(storyList);
 
         if (storyName.toLowerCase()==storyList.toLowerCase()){
             isExist=true;

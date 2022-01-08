@@ -7,15 +7,12 @@
         body {
             background-attachment: fixed;
             background-color: black;
-            background-image: url('/assets/img/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==.jpeg');
-
-
+            background-image: url('./../img/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==.jpeg');
             background-size: 100%;
-
-
         }
+        
         .container {
-            height: 700px;
+            height: 750px;
             width: 1200px;
             background-color: black;
             margin-top: 90px;
@@ -102,6 +99,24 @@
             color: white;
 
         }
+        #topTitle{
+            position: absolute;
+            left: 1160px;
+            top: 50px;
+            font-size: 60px;
+        }
+        #loginTitle{
+            position: absolute;
+            left: 640px;
+            top: 680px;
+            font-size: 30px;
+            text-decoration: none;
+            color: skyblue;
+        }
+        #fullContent{
+            position: absolute;
+            top: 200px;
+        }
         #logo {
             height: 400px;
             width: auto;
@@ -113,9 +128,7 @@
 
 
         }
-        table {
-            flex-wrap: wrap;
-        }
+        
         #text {
             position: absolute;
             top: 600px;
@@ -131,4 +144,5 @@
         a {
             text-decoration: none;
         }
+        
     
