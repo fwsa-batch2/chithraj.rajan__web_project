@@ -23,13 +23,14 @@ function addingStoriesInHtml(){
         let poster = storyInParse[i].storyPoster;
         
 
-        stories+=`<div id='main'>
+        stories+=`
         <div id='images'>
-            <img src="${poster}" alt="${title}" onclick="">
-            
+        <a href="./../pages/storyAdding.html?story=${title}">
+            <img src="${poster}" alt="${title}" onclick="" id="addImg" class="add-img">
+        </a>  
         </div>`;
     }
-    let storyContent = document.getElementById("main");
+    let storyContent = document.getElementById("newStories");
     console.log(storyContent);
 
     storyContent.innerHTML= stories;

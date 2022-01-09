@@ -34,6 +34,8 @@ a {
     border-radius: 25px;
 
 }
+
+
 #navbar1 {
     height: 75px;
     width: 1100px;
@@ -89,8 +91,8 @@ a {
     color: rgb(255, 255, 255);
     font-family: 'Fuzzy Bubbles', cursive;
 }
-#images img{
-    /* position: absolute; */
+/* #images img{
+    position: absolute;
     height: 400px;
     margin-top: 300px;
     border-radius: 20px;
@@ -128,7 +130,7 @@ a {
     
 }
 #image img{
-    /* position: absolute; */
+    position: absolute;
     height: 280px;
     margin-top: 760px;
     margin-left: 100px;
@@ -228,7 +230,33 @@ a {
 .img0004{
     left: 1400px;
 
+} */
+#images{
+    float: left;
+    margin-left: 5%;
+    height: 280px;
+    width: 280px;
+    margin-top: 5%;
 }
+
+#newStories{
+    width: 1500px;
+    height: fit-content;
+    margin-left: 190px;
+    margin-top: 20%;
+}
+#addImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px white;
+}
+#addImg:hover{
+    transition: 1.5s;
+    opacity: 0.9;
+    box-shadow: 0 0 50px 5px violet;
+}
+
 #footer{
     background-color: white;
     position: absolute;
