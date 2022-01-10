@@ -3,6 +3,8 @@
 	1.Register (completed)
 	2.Login (completed)
 	3.List Of Categories
+	4.List Stories
+	5.Add Stories
 
 ## Register
 
@@ -20,15 +22,15 @@
 	* If it didn't match...User can create new login details...from register page...
 	* If everything is validated, redirect to home page.
 
-#### List Of Categories
+### List Of Categories
 	* In this categories section, We can find some different topics for kids learning...(like..Stories,Kids Videos,Poems..) 
 	* If you choose any topic...you will redirected to that page..
 	* And also...We can find the related content...
 
-##### List Stories
+### List Stories
 	* In this category, We can find diffrent type of story sections..And also...diffrent kind of stories
 
-##### add stories
+### add stories
 	* Admin can add new story posters in this page..
 	* If click any poster...you redirected to the related page... 
 
