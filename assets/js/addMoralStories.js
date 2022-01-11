@@ -1,9 +1,9 @@
 let storyInArray = [];
-function renderingstories(){
+function renderingstories() {
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
-    if (storyInParse == null){
-        localStorage.setItem("stories","[]");
-      
+    if (storyInParse == null) {
+        localStorage.setItem("stories", "[]");
+
     }
     console.log(storyInParse);
 
@@ -12,19 +12,19 @@ function renderingstories(){
     addingStoriesInHtml()
 
 }
-function addingStoriesInHtml(){
+function addingStoriesInHtml() {
     console.group(addingStoriesInHtml);
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
     let len = storyInParse.length
     console.log(storyInParse);
     let stories = '';
-    
-    for (let i = 0; i<len; i++){
+
+    for (let i = 0; i < len; i++) {
         let title = storyInParse[i].storyTitle;
         let poster = storyInParse[i].storyPoster;
-        
 
-        stories+=`
+
+        stories += `
         <div id='images'>
         <a href="./../pages/storyAdding.html?story=${title}">
             <img src="${poster}" alt="${title}" onclick="" id="addImg" class="add-img">
@@ -34,7 +34,7 @@ function addingStoriesInHtml(){
     let storyContent = document.getElementById("newStories");
     console.log(storyContent);
 
-    storyContent.innerHTML= stories;
+    storyContent.innerHTML = stories;
 
 }
 renderingstories();

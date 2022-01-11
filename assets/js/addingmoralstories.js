@@ -13,7 +13,7 @@ function addStory(event) {
     };
 
     let validatingStoryTitle = validateStories(title);
-    
+
     if (validatingStoryTitle) {
         alert("This story name is already existed");
         return
@@ -26,16 +26,16 @@ function addStory(event) {
     const storyDetailsInString = JSON.stringify(storyInArray);
     localStorage.setItem("stories", storyDetailsInString);
 
-    window.location.href="./../pages/moral stories.html";
+    window.location.href = "./../pages/moral stories.html";
 
     onPageLoad();
 }
 
-function onPageLoad(){
+function onPageLoad() {
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
 
-    if (storyDetailsInParse == null){
-       localStorage.setItem("stories","[]");
+    if (storyDetailsInParse == null) {
+        localStorage.setItem("stories", "[]");
     }
 
     console.table(storyDetailsInParse);
@@ -45,27 +45,24 @@ function onPageLoad(){
 
 onPageLoad();
 
-function validateStories(storyName){
+function validateStories(storyName) {
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
-    let len =storyDetailsInParse.length
-    let isExist = false ;
-    if(storyDetailsInParse!= null){
+    let len = storyDetailsInParse.length
+    let isExist = false;
+    if (storyDetailsInParse != null) {
 
-    
-    for (let i =0;i<len;i++){
 
-        const storyList = storyDetailsInParse[i].storyTitle;
-        console.log(storyList);
+        for (let i = 0; i < len; i++) {
 
-        if (storyName.toLowerCase()==storyList.toLowerCase()){
-            isExist=true;
-            break;
+            const storyList = storyDetailsInParse[i].storyTitle;
+            console.log(storyList);
+
+            if (storyName.toLowerCase() == storyList.toLowerCase()) {
+                isExist = true;
+                break;
+            }
         }
     }
-    }
-  return isExist;
- 
+    return isExist;
+
 }
-
-
-
