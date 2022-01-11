@@ -29,21 +29,14 @@
                     window.location.href = "/pages/storyhome.html";
                 }
 
-                // else{
-                //     let UserLoginData = {
-                //         "userName": userName,
-                //         "email": email,
-                //         "password": password,
-
-                //     }
-                //     array.push(UserLoginData);
-                // let arrayinstring = JSON.stringify(array);
-                // localStorage.setItem("usersLoginDetail", arrayinstring);
+            
             }
 
+            let arrLen = array.length;
             function isEmailExist(inputEmail) {
                 let isExist = false;
-                for (let i = 0; i < array.length; i++) {
+                
+                for (let i = 0; i < arrLen; i++) {
                     if (inputEmail == array[i].email) {
                         isExist = true;
                         break;
@@ -57,7 +50,8 @@
 
             function isPasswordExist(inputPassword) {
                 let isExist = false;
-                for (let i = 0; i < array.length; i++) {
+                
+                for (let i = 0; i < arrLen; i++) {
                     if (inputPassword == array[i].password) {
                         isExist = true;
                         break;
@@ -70,7 +64,7 @@
             }
 
             function visibleValue() {
-                // const visiblePassword = document.getElementById("password");
+                
                 const vari = document.getElementById("check");
 
                 if (vari.checked) {
@@ -83,53 +77,4 @@
             }
 
 
-            /*let userData = {
-                    "userName": userName,
-                    "email": email,
-                    "password": password,
-                    "cpass": confirmPassword
-                }
-
-                array.push(userData);
-                let arrayinstring = JSON.stringify(array);
-                localStorage.setItem("usersdetail", arrayinstring);
-            }
-
-            function check() {
-                const input = JSON.parse(localStorage.getItem("usersdetail"));
-
-                for (let i = 0; i < input.length; i++) {
-                    if (password != confirmPassword) {
-                        alert("Invalid Registration !");
-                        window.location.href = "#";
-                        break;
-
-                    }
-                    if (input[i].email == email) {
-                        alert("E-mail already exists");
-                        window.location.href = "#";
-                        break;
-
-                    }
-
-                }
-
-            }
-
-
-            // get data from localStorage
-            // if data present in localstorage
-            // loop data
-            // get user details
-            // get user email
-
-            // if user email == input email
-            // isExist = true
-            // break the loop
-
-            // localStorage.getItem("userdetails");
-            // if()
-
-
-            // return isExist*/
-        
+           

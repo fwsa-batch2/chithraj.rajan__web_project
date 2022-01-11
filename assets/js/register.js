@@ -1,5 +1,5 @@
 let userarray = [];
-function userInput() {
+function userInput(event) {
     event.preventDefault();
 
     let userTitle = document.getElementById("title").value;
@@ -24,8 +24,6 @@ function userInput() {
     const peter = JSON.stringify(userarray);
 
     localStorage.setItem("usersInfo", peter);
-    // let inputInString = JSON.stringify("input");
-    // let dataList = localStorage.setItem("Chithu",inputInString);
 
     window.location.href = "/pages/password and mail.html"
 }
@@ -38,7 +36,7 @@ function onRefresh() {
     } else {
         userarray = [];
     }
-    return;
+
 
 
 }
