@@ -47,12 +47,12 @@ onPageLoad();
 
 function validateStories(storyName){
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
-
+    let len =storyDetailsInParse.length
     let isExist = false ;
     if(storyDetailsInParse!= null){
 
     
-    for (let i =0;i<storyDetailsInParse.length;i++){
+    for (let i =0;i<len;i++){
 
         const storyList = storyDetailsInParse[i].storyTitle;
         console.log(storyList);

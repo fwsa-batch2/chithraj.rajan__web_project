@@ -15,10 +15,11 @@ function renderingstories(){
 function addingStoriesInHtml(){
     console.group(addingStoriesInHtml);
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
+    let len = storyInParse.length
     console.log(storyInParse);
     let stories = '';
     
-    for (let i = 0; i<storyInParse.length; i++){
+    for (let i = 0; i<len; i++){
         let title = storyInParse[i].storyTitle;
         let poster = storyInParse[i].storyPoster;
         

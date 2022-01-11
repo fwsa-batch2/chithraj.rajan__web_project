@@ -9,18 +9,19 @@
             onPageLoad();
 
 
-            function userInput() {
+            function userInput(event) {
                 event.preventDefault();
                 let userName = document.getElementById("fname").value;
                 let email = document.getElementById("email").value;
                 let pass = document.getElementById("password").value;
                 let emailId = isEmailExist(email);
                 let password = isPasswordExist(pass);
-                if (password == false) {
+                let boolean = false;
+                if (password == boolean) {
                     alert("Invalid login credentials");
                 }
 
-                if (emailId == false) {
+                if (emailId == boolean) {
                     alert("Invalid login credentials");
                 }
 
