@@ -22,13 +22,13 @@ getStoryDetails(storytitle);
 function addingStories() {
     console.group("addingStories")
     const urlStatus = window.location.search;
-    const urlParam = new URLSearchParams(urlStatus);
-    const storytitle = urlParam.get("story");
-    console.log(storytitle);
+    const urlParams = new URLSearchParams(urlStatus);
+    const storytitles = urlParams.get("story");
+    console.log(storytitles);
     const getvalue = JSON.parse(localStorage.getItem("stories"));
     console.log(getvalue);
     let fables = '';
-    const tale = getvalue.filter(story => story.storyTitle == storytitle);
+    const tale = getvalue.filter(story => story.storyTitle == storytitles);
     console.log(tale);
     const titleOfStory = tale[0].storytitle;
     console.log(titleOfStory);
