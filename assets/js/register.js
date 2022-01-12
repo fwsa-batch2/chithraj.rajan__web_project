@@ -25,7 +25,7 @@ function userInput(event) {
 
     localStorage.setItem("usersInfo", peter);
 
-    window.location.href = "./../pages/password and mail.html"
+    window.location.href = "https://kiddykids.fwsa.in/pages/password and mail.html"
 }
 
 function onRefresh() {
