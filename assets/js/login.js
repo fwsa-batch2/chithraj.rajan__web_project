@@ -14,6 +14,7 @@ function userInput(event) {
     let email = document.getElementById("email").value;
     let pass = document.getElementById("password").value;
     let emailId = isEmailExist(email);
+    let getUserName = isUsernameExist(userName);
     let password = isPasswordExist(pass);
     let boolean = false;
     if (password == boolean) {
@@ -24,7 +25,11 @@ function userInput(event) {
         alert("Invalid login credentials");
     }
 
-    if (password === true && emailId === true) {
+    if (getUserName == boolean) {
+        alert("Invalid login credentials");
+    }
+
+    if (password === true && emailId === true && getUserName === true ) {
         window.location.href = "/pages/storyhome.html";
     }
 
@@ -32,11 +37,27 @@ function userInput(event) {
 }
 
 let arrLen = array.length;
+
 function isEmailExist(inputEmail) {
     let isExist = false;
 
     for (let i = 0; i < arrLen; i++) {
         if (inputEmail == array[i].email) {
+            isExist = true;
+            break;
+        }
+
+    }
+    return isExist
+
+
+}
+
+function isUsernameExist(inputUsername) {
+    let isExist = false;
+
+    for (let i = 0; i < arrLen; i++) {
+        if (inputUsername == array[i].userName) {
             isExist = true;
             break;
         }
