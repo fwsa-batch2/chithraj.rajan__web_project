@@ -48,18 +48,18 @@
 
             }
 
-            function visibleValue() {
-                const visiblePassword = document.getElementById("createpassword");
-                const vari = document.getElementById("check");
+            // function visibleValue() {
+            //     const visiblePassword = document.getElementById("createpassword");
+            //     const vari = document.getElementById("check");
 
-                if (vari.checked) {
-                    document.getElementById("createpassword").type = "text";
-                } else {
-                    document.getElementById("createpassword").type = "password";
-                }
+            //     if (vari.checked) {
+            //         document.getElementById("createpassword").type = "text";
+            //     } else {
+            //         document.getElementById("createpassword").type = "password";
+            //     }
 
 
-            }
+            // }
 
 
            
