@@ -347,3 +347,12 @@ a {
 #add img:hover{
     opacity: 0.7;
 }
+#delete{
+    position: absolute;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -35px;
+    
+
+}
+

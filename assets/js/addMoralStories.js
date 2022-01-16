@@ -15,7 +15,7 @@ function renderingstories() {
 function addingStoriesInHtml() {
     console.group(addingStoriesInHtml);
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
-    let len = storyInParse.length
+    let len = storyInParse.length;
     console.log(storyInParse);
     let stories = '';
 
@@ -27,10 +27,13 @@ function addingStoriesInHtml() {
         stories += `
         <div id='images'>
         <a href="./../pages/storyAdding.html?story=${title}">
-            <img src="${poster}" alt="${title}" onclick="" id="addImg" class="add-img">
-        </a>  
+            <img src="${poster}" alt="${title}" onclick="" id="addImg" class="add-img"></a> 
+            <img src="./../assets/img/close.png" alt="delete" id="delete" onclick="removeStory(${i})"></img>
+            
+         
         </div>`;
     }
+    
     let storyContent = document.getElementById("newStories");
     console.log(storyContent);
 
@@ -38,3 +41,17 @@ function addingStoriesInHtml() {
 
 }
 renderingstories();
+
+function removeStory(index){
+    console.group("removeStory");
+    const storyInLocalStorage = JSON.parse(localStorage.getItem("stories"));
+    console.log(storyInLocalStorage);
+    storyInLocalStorage.splice(index,1);
+    const storiesInString = JSON.stringify(storyInLocalStorage);
+    localStorage.setItem("stories",storiesInString);
+    addingStoriesInHtml();
+
+    console.groupEnd("removeStory");
+}
+
+

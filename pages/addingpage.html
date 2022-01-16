@@ -20,29 +20,38 @@
         border-radius: 30px;
         background-image: url(/assets/img/Nice\ Background\ Design\ For\ Powerpoint\ \ \ clipartsgramcom.jpg);
         box-shadow: seashell 0px 0px 10px 10px;
+    }
+    label{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        position: relative;
+        
+}
+#poster{
+    top: 50px;
+    left: 100px;
+}
+#title{
+    top: 90px;
+    left: 100px;
+}
+#content{
+    top: 30px;
+    left: 100px;
+}
 
-    }
-    /* #imgUrl{
-        position: absolute;
-        top: 100px;
-        left: 650px;
-    }
-    #stitle{
-        position: absolute;
-        top: 200px;
-        left: 650px;
-    } */
+    
 </style>
 <body>
     <form onsubmit="addStory(event)">
         <div id="main">
-            <label for="storyImg">Poster Url</label>
+            <label for="storyImg" id="poster">Poster Url</label>
             <input type="text" placeholder="Enter the image url" id="imgUrl">
             <br>
-            <label for="title">Story Title</label>
+            <label for="title" id="title">Story Title</label>
             <input type="text" placeholder="Enter the Story Title" id="stitle">
             <br>
-            <label for="title">Story Title</label>
+            <label for="title" id="content">Story Content</label>
             <textarea id="storyContent" cols="30" rows="10"></textarea>
             <button type="submit">Add</button>
             
