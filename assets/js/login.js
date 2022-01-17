@@ -9,7 +9,9 @@ onPageLoad();
 
 
 function userInput(event) {
+    
     event.preventDefault();
+    
     let userName = document.getElementById("fname").value;
     let email = document.getElementById("email").value;
     let pass = document.getElementById("password").value;
@@ -30,8 +32,11 @@ function userInput(event) {
     }
 
     if (password === true && emailId === true && getUserName === true ) {
-        window.location.href = "/pages/storyhome.html";
+        console.log("hello");
+        window.location.href = "/pages/storyhome2.html";
+        
     }
+    
 
 
 }
