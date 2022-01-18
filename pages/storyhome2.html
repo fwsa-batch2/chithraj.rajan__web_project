@@ -172,11 +172,12 @@
             <div class="navbar">
                 <button>
                     <a href="/pages/storyhome.html"><p id="home">Home</p></a></button>
-                <select name="categories" id="cat">
-                    <option value="http://www.google.com">Categories</option>
-                    <option value="" onclick="goToCategory()">Stories</option>
-                    <option value="">Poems</option>
-                    <option value="">Kids-Videos</option>
+                <select onchange="displayCategory(this.value)" name="categories" id="cat">
+                    <option>Categories</option>
+                    <option value="stories">Stories</option>
+                    <option value="poems">Poems</option>
+                    <option value="videos">Kids-Videos</option>
+                    <option value="comics">Comics</option>
 
                 </select>
                 </button>
