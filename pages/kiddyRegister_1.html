@@ -32,7 +32,8 @@
                         <br><input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         <br>
                         <label for="createpassword">Create Password</label>
-                        <br><input type="password" id="createpassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/" title="please enter a number or alpha letters with any speacial charecters(atleast 8 characters)">
+                        <br><input type="password" id="createpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
                         <br>
                         <span id="alertMessage"></span>
 

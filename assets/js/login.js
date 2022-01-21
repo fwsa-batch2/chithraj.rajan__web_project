@@ -33,7 +33,7 @@ function userInput(event) {
 
     if (password === true && emailId === true && getUserName === true ) {
         console.log("hello");
-        window.location.href = "/pages/imageslider.html";
+        window.location.href = "/pages/kiddyHome.html";
         
     }
     
