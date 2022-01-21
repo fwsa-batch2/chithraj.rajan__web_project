@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&family=Shalimar&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./../assets/css/imageslider.css">
+        <link rel="icon" href="/assets/img/New Project (3).png">
+        <title>image slider.html</title>
+    </head>
+    <body>
+        <img src="/assets/img/Pink Script Signature Beauty Skincare o.png" alt="title" id="title">
+
+
+        <div id="navbar">
+            <a href="/pages/storyhome.html">
+                <p id="home">Home</p>
+            </a>
+            <select onchange="displayCategory(this.value)" name="Categories" id="cat">
+                <option>Categories</option>
+                <option value="stories">Stories</option>
+                <option value="poems">Poems</option>
+                <option value="videos">Kids-Videos</option>
+                <option value="comics">Comics</option>
+
+            </select>
+            <a href="funzone.html">
+                <p id="fun" value="funZone">FunZone</p>
+            </a>
+            <a href="#">
+                <p id="us">AboutUs</p>
+            </a>
+
+        </div>
+        <div id="navbar1">
+            <p>"Great stories happen to those who can tell them."</p>
+
+        </div>
+
+        
+
+        <div id="footer">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="/assets/img/facebook.png" alt="fb" id="fb"></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener"><img src="/assets/img/instagram.png" alt="insta" id="insta"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank" rel="noopener"><img src="/assets/img/twitter.png" alt="" id="twiter"></a>
+            <a href="https://www.youtube.com/results?search_query=kiddy+kids" target="_blank" rel="noopener"><img src="/assets/img/youtube.png" alt="" id="yt"></a>
+            <a href="https://in.linkedin.com/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up&mcid=6844056167778418689&trk2=ga_campid=14650114788_asid=127961666300_crid=545833659295_kw=linkedin%20login_d=c_tid=kwd-12704335873_n=g_mt=e_geo=1007809_slid=&gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9K-qDD-vNR18R8HQUev04_w6Y_LwIk9apUg3AUe9UFjqruwZne004MaAlG1EALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener"><img src="/assets/img/linkedin.png" alt="" id="ln"></a>
+            <img src="/assets/img/copyright.png" alt="" id="cr">
+            <p id="cr1">2015-2021 Kiddy-Kids.Inc. All rights reserved.</p>
+            <p id="cr2">Kiddy-Kids, and the cog logo service marks are owned by Kiddy-Kids.Inc</p>
+        </div>
+
+
+        <div class="slider">
+            <div class="slide active">
+                <img src="./../assets/img/Untitled design (7).png" alt="background">
+                <div class="info">
+                    <h2>Hello Kid...</h2>
+                    <p>Designed to provide children with reading resources, Kiddy-Kids is a digital gateway to thousands of richly illustrated, open-licensed children's stories in mother tongue languages.</p>
+                    
+                </div>
+                
+
+            </div>
+            <div class="slide">
+                <img src="./../assets/img/Untitled design (8).png" alt="background">
+                <div class="info">
+                    <h2>You Are A Kiddy-Kids Member !!!</h2>
+                    <p>There's more to KIDDY-KIDS than just reading.It is also a first-of-its-kind platform that provides easy-to-use tools to  create, adapt, and translate new stories for children.</p>
+                </div>
+
+            </div>
+            <div class="slide">
+                <img src="./../assets/img/Untitled design (6).png" alt="background">
+                <div class="info">
+                    <h2>Wow Children !!!</h2>
+                    <p>There's more to KIDDY-KIDS than just reading.It is also a first-of-its-kind platform that provides easy-to-use tools to It is also a first-of-its-kind platform that provides easy-to-use tools to</p>
+                </div>
+
+            </div>
+            <div class="navigation">
+                <em class="fas fa-chevron-left prev-btn"><</em>
+                <em class="fas fa-chevron-right next-btn">></em>
+            </div>
+            <div class="navigation-visibility">
+               <div class="slide-icon active"></div>
+               <div class="slide-icon"></div> 
+               <div class="slide-icon"></div> 
+                
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const slider = document.querySelector(".slider");
+            const nextBtn = document.querySelector(".next-btn");
+            const prevBtn = document.querySelector(".prev-btn");
+            const slides = document.querySelectorAll(".slide");
+            const slideIcons = document.querySelectorAll(".slide-icon");
+            const numberOfSlides = slides.length;
+            var slideNumber = 0;
+
+            //image slider next button
+
+            nextBtn.addEventListener("click",() =>{
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+
+                });
+                
+                slideNumber++;
+
+                if(slideNumber > (numberOfSlides - 1)){
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            });
+
+            //image slider previous button
+            prevBtn.addEventListener("click",() => {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+
+                });
+                
+                slideNumber--;
+
+                if(slideNumber < 0){
+                    slideNumber = numberOfSlides - 1;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            });
+
+            //image slider autoply
+
+            var playSlider;
+
+            var repeater = () =>{
+                playSlider = setInterval(function(){
+                    slides.forEach((slide) => {
+                    slide.classList.remove("active");
+
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+
+                });
+                
+                slideNumber++;
+
+                if(slideNumber > (numberOfSlides - 1)){
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+                }, 3000)
+            }
+
+            repeater();
+
+            //stop the autoply on mouse hover
+
+            slider.addEventListener("mouseover", () => {
+                clearInterval(playSlider);
+            });
+
+            //start the autoply on mouse hover
+            slider.addEventListener("mouseout", () => {
+                repeater(); 
+            })
+
+            function displayCategory(value){
+            switch(value){
+            case "stories":
+            window.location.href = "storyscotent.html";
+            break
+            case "poems":
+            window.location.href = "storyscotent.html";
+            break
+            case "videos":
+            window.location.href = "storyscotent.html";
+            break
+            case "comics":
+            window.location.href = "storyscotent.html";
+            break
+    }
+            
+
+}
+
+        </script>
+
+    </body>
+</html>
