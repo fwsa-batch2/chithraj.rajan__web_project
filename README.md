@@ -1,3 +1,7 @@
+##
+* Git Link - https://github.com/fwsa-batch2/chithraj.rajan__web_project/
+* Live Url Link - https://fwsa-batch2.github.io/chithraj.rajan__web_project/
+* SonarCloud Url Link -https://sonarcloud.io/project/overview?id=fwsa-batch2_chithraj.rajan__web_project
 # Kiddy-Kids
 
 	1.Register (completed)
@@ -34,4 +38,3 @@
 	* Admin can add new story posters in this page..
 	* If click any poster...you redirected to the related page... 
 
-hi
