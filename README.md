@@ -1,9 +1,9 @@
-##
+# Kiddy-Kids
 * Git Link - https://github.com/fwsa-batch2/chithraj.rajan__web_project/
 * Live Url Link - https://fwsa-batch2.github.io/chithraj.rajan__web_project/
 * SonarCloud Url Link -https://sonarcloud.io/project/overview?id=fwsa-batch2_chithraj.rajan__web_project
-# Kiddy-Kids
 
+## Features
 	1.Register (completed)
 	2.Login (completed)
 	3.List Of Categories
