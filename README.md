@@ -37,5 +37,3 @@
 ### add stories
 	* Admin can add new story posters in this page..
 	* If click any poster...you redirected to the related page... 
-
-hello
