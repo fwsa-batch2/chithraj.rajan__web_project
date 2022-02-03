@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/login.css">
-        <link rel="icon" href="/assets/img/New Project (3).png">
-        <title>login.html</title>
-       
-    </head>
 
-    <body>
-        <table>
-            <caption></caption>
-            <th id="head">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="icon" href="/assets/img/New Project (3).png">
+    <title>login.html</title>
+
+</head>
+
+<body>
+    <table>
+        <caption></caption>
+        <th id="head">
             <form onsubmit="userInput(event)">
-               
-                    <div class="container"> <br>
-                    <td class="data">
-                        <p id="welcome">Hey There...</p>
-                        <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
-                        <p id="text">Almost Done..Please Login...
-                        </p>
-                        <br>
-                        <label for="userName">UserName</label>
-                        <br><input type="text" id="fname" required placeholder="Enter Your UserName">
-                        <br>
-                        <label for="userEmail">Email</label>
-                        <br><input type="text" id="email" required placeholder="Enter Your Email">
-                        <br>
-                        <label for="createpassword">Password</label>
-                        <br><input type="password" id="password" required placeholder="Your Password">
-                        <br>
-                        <span id="alertMessage"></span>
 
-                        <input type="checkbox" value="Showpassword" id="check" onclick="visibleValue()"><p id="showpassword">Show Password</p>
+                <div class="container"> <br>
+        <td class="data">
+            <p id="welcome">Hey There...</p>
+            <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
+            <p id="text">Almost Done..Please Login...
+            </p>
+            <br>
+            <label for="userName">UserName</label>
+            <br><input type="text" id="fname" required placeholder="Enter Your UserName">
+            <br>
+            <label for="userEmail">Email</label>
+            <br><input type="text" id="email" required placeholder="Enter Your Email">
+            <br>
+            <label for="createpassword">Password</label>
+            <br><input type="password" id="password" required placeholder="Your Password">
+            <br>
+            <span id="alertMessage"></span>
 
-                        
+            <input type="checkbox" value="Showpassword" id="check" onclick="visibleValue()">
+            <p id="showpassword">Show Password</p>
 
-                        <br><br>
-                        <button type="submit">Login</button>
-                    </td>
-                </tr>
-            </form>
+
+
+            <br><br>
+            <button type="submit">Login</button>
+        </td>
+        </tr>
+        </form>
         </th>
-        </table>
-        <script src="../assets/js/login.js"></script>
-    </body>
+    </table>
+    <script src="../assets/js/login.js"></script>
+</body>
+
 </html>

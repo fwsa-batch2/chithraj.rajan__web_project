@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/register2.css">
-        <link rel="icon" href="/assets/img/New Project (3).png">
-        <title>Kiddy Register.html</title>
-        
-    </head>
 
-    <body>
-        <table>
-            <caption></caption>
-            <th id="head">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/register2.css">
+    <link rel="icon" href="/assets/img/New Project (3).png">
+    <title>Kiddy Register.html</title>
+
+</head>
+
+<body>
+    <table>
+        <caption></caption>
+        <th id="head">
             <form onsubmit="userInput(event)">
-                
-
-                    <div class="container"> <br>
-                    <td class="data">
-                        <p id="welcome">Welcome To...</p>
-                        <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
-                        <p id="text">Don't Worry...Let's Create..
-                        </p>
-                        <br>
-                        <label for="userName">UserName</label>
-                        <br><input type="text" id="fname"pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" required>
-                        <br>
-                        <label for="userEmail">Email</label>
-                        <br><input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                        <br>
-                        <label for="createpassword">Create Password</label>
-                        <br><input type="password" id="createpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
-                        <br>
-                        <span id="alertMessage"></span>
-
-                        <input type="checkbox" value="Showpassword" id="check" onclick="visibleValue()">
-
-                        <label for="confirmpassword" id="cpass"><p>Confirm Password</p></label>
-                        <br><input type="password" id="confirmpassword" required>
 
 
-                        <br><br>
-                        <button type="submit">Create Account</button>
-                    </td>
-                </tr>
-            </form>
+                <div class="container"> <br>
+        <td class="data">
+            <p id="welcome">Welcome To...</p>
+            <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
+            <p id="text">Don't Worry...Let's Create..
+            </p>
+            <br>
+            <label for="userName">UserName</label>
+            <br><input type="text" id="fname" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" required>
+            <br>
+            <label for="userEmail">Email</label>
+            <br><input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <br>
+            <label for="createpassword">Create Password</label>
+            <br><input type="password" id="createpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <br>
+            <span id="alertMessage"></span>
+
+            <input type="checkbox" value="Showpassword" id="check" onclick="visibleValue()">
+
+            <label for="confirmpassword" id="cpass">
+                <p>Confirm Password</p>
+            </label>
+            <br><input type="password" id="confirmpassword" required>
+
+
+            <br><br>
+            <button type="submit">Create Account</button>
+        </td>
+        </tr>
+        </form>
         </th>
-        </table>
-        <script src="../assets/js/register2.js"></script>
-    </body>
+    </table>
+    <script src="../assets/js/register2.js"></script>
+</body>
+
 </html>

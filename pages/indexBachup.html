@@ -1,71 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/register.css">
-        <title>index.html</title>
-    </head>
-    
-    <body>
 
-        <form action="submit" onsubmit="userInput()">
-            <p id="welcome">Welcome To...</p>
-            <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
-            <p id="text">Are You Registered...?</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gwendolyn:wght@700&family=Lobster&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <title>index.html</title>
+</head>
 
-            <div class="container">
+<body>
+
+    <form action="submit" onsubmit="userInput()">
+        <p id="welcome">Welcome To...</p>
+        <img src="/assets/img/New Project (2).png" id="logo" alt="logo">
+        <p id="text">Are You Registered...?</p>
+
+        <div class="container">
+            <br>
+            <td class="data">
+                <label for="tilte">Title</label>
+                <select name="title" id="title" required>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                    <option>Miss.</option>
+                    <option>Dr.</option>
+                </select>
                 <br>
-                <td class="data">
-                    <label for="tilte">Title</label>
-                    <select name="title" id="title" required>
-                        <option>Mr.</option>
-                        <option>Mrs.</option>
-                        <option>Ms.</option>
-                        <option>Miss.</option>
-                        <option>Dr.</option>
-                    </select>
-                    <br>
-                    <label for="fname">First Name</label>
-                    <br><input type="text" id="fname" required placeholder="Enter Your frist Name">
-                    <br>
-                    <label for="lname">Last Name</label>
-                    <br><input type="text" id="lname" required placeholder="Enter Your Last Name">
-                    <br>
-                    <label for="role">Role</label>
-                    <br>
-                    <select name="role" id="role" required>
-                        <option>-Select Anyone-</option>
-                        <option>Teacher</option>
-                        <option>Librarian</option>
-                        <option>Reading Specialist</option>
-                        <option>Teaching Specialist</option>
-                        <option>IT Department</option>
-                        <option>Others</option>
-                    </select>
-                    <br>
-                    <label for="grade">Grade</label>
-                    <br>
-                    <select name="grade" id="grade" required>
-                        <option>-Select Anyone-</option>
-                        <option>Pre-KG</option>
-                        <option>KG</option>
-                        <option>1st Grade</option>
-                        <option>2nd Grade</option>
-                        <option>3rd Grade</option>
-                        <option>Others</option>
-                    </select>
-                    <br>
-                    <label for="address">School Name and Address</label>
-                    <br><input type="text" id="school">
-                    <br><br>
-                    <button type="submit">Create Account</button>
+                <label for="fname">First Name</label>
+                <br><input type="text" id="fname" required placeholder="Enter Your frist Name">
+                <br>
+                <label for="lname">Last Name</label>
+                <br><input type="text" id="lname" required placeholder="Enter Your Last Name">
+                <br>
+                <label for="role">Role</label>
+                <br>
+                <select name="role" id="role" required>
+                    <option>-Select Anyone-</option>
+                    <option>Teacher</option>
+                    <option>Librarian</option>
+                    <option>Reading Specialist</option>
+                    <option>Teaching Specialist</option>
+                    <option>IT Department</option>
+                    <option>Others</option>
+                </select>
+                <br>
+                <label for="grade">Grade</label>
+                <br>
+                <select name="grade" id="grade" required>
+                    <option>-Select Anyone-</option>
+                    <option>Pre-KG</option>
+                    <option>KG</option>
+                    <option>1st Grade</option>
+                    <option>2nd Grade</option>
+                    <option>3rd Grade</option>
+                    <option>Others</option>
+                </select>
+                <br>
+                <label for="address">School Name and Address</label>
+                <br><input type="text" id="school">
+                <br><br>
+                <button type="submit">Create Account</button>
 
 
-                </td>
+            </td>
             </tr>
-        </form>
-    </body>
-</html></table></div><script src="../assets/js/register.js"></script></body></html>
+    </form>
+</body>
+
+</html>
+</table>
+</div>
+<script src="../assets/js/register.js"></script>
+</body>
+
+</html>
