@@ -1,6 +1,10 @@
+//onclicking functions to go another page..
+
 function goback() {
     window.location.href = "/pages/moral stories.html"
 }
+
+//categoires click functions
 function displayCategory(value) {
     switch (value) {
         case "stories":

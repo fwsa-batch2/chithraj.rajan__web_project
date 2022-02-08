@@ -1,3 +1,5 @@
+//collecting user details from input 
+
 let userarray = [];
 function userInput(event) {
     event.preventDefault();
@@ -27,6 +29,7 @@ function userInput(event) {
 
     window.location.href = "./../pages/kiddyRegister_1.html";
 }
+
 
 function onRefresh() {
 

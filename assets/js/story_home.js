@@ -1,3 +1,5 @@
+//switch case for categories to go a seprate categorie
+
 function displayCategory(value) {
     switch (value) {
         case "stories":

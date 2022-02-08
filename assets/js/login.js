@@ -1,3 +1,5 @@
+//collecting user details from input 
+
 let array = [];
 function onPageLoad() {
     let recollect = JSON.parse(localStorage.getItem("usersdetail"));
@@ -7,6 +9,7 @@ function onPageLoad() {
 }
 onPageLoad();
 
+//function for getting user details and validate password and mail
 
 function userInput(event) {
     
@@ -43,6 +46,8 @@ function userInput(event) {
 
 let arrLen = array.length;
 
+//validation for email
+
 function isEmailExist(inputEmail) {
     let isExist = false;
 
@@ -57,6 +62,8 @@ function isEmailExist(inputEmail) {
 
 
 }
+
+//validation for username
 
 function isUsernameExist(inputUsername) {
     let isExist = false;
@@ -73,6 +80,8 @@ function isUsernameExist(inputUsername) {
 
 }
 
+//validation for password
+
 function isPasswordExist(inputPassword) {
     let isExist = false;
 
@@ -87,6 +96,8 @@ function isPasswordExist(inputPassword) {
 
 
 }
+
+//function for showpassword
 
 function visibleValue() {
 

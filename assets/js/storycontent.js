@@ -1,9 +1,13 @@
+//onclicking functions to go another page..
+
 function goMoral(){
     window.location.href="moral stories.html"
 }
 function goPancha(){
     window.location.href="panchatantra stories.html"
 }
+
+//categoires click functions
 
 function displayCategory(value){
         switch(value){

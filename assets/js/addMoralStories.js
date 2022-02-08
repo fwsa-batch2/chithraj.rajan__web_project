@@ -1,3 +1,5 @@
+//renderingstories from local storage
+
 let storyInArray = [];
 function renderingstories() {
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
@@ -12,6 +14,9 @@ function renderingstories() {
     addingStoriesInHtml()
 
 }
+
+//adding that rendered data into new html page
+
 function addingStoriesInHtml() {
     console.group(addingStoriesInHtml);
     const storyInParse = JSON.parse(localStorage.getItem("stories"));
@@ -41,6 +46,8 @@ function addingStoriesInHtml() {
 
 }
 renderingstories();
+
+//function for remove story
 
 function removeStory(index){
     console.group("removeStory");

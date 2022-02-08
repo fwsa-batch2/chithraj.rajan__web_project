@@ -1,3 +1,5 @@
+//function for onclick on categories
+
 function displayCategory(value){
     switch(value){
     case "stories":

@@ -19,6 +19,7 @@ function getStoryDetails(storyName) {
 
 getStoryDetails(storytitle);
 
+
 function addingStories() {
     console.group("addingStories")
     const urlStatus = window.location.search;

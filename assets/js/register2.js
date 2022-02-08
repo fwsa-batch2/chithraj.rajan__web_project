@@ -1,4 +1,4 @@
-
+//collecting user details from input 
             let array = [];
             function onPageLoad() {
                 let recollect = JSON.parse(localStorage.getItem("usersdetail"));
@@ -8,7 +8,7 @@
             }
             onPageLoad();
 
-
+//function for getting details form input
             function userInput(event) {
                 event.preventDefault();
                 let userName = document.getElementById("fname").value;
@@ -33,6 +33,8 @@
                     window.location.href = "/pages/login.html"
                 }
             }
+
+//validaton for email
             function isEmailExist(inputEmail) {
                 let isExist = false;
                 let arrLength = array.length;
@@ -48,6 +50,7 @@
 
             }
 
+//function for show password
             function visibleValue() {
                 
                 const vari = document.getElementById("check");

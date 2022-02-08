@@ -1,9 +1,12 @@
+//for click to next page
 function goSanta(){
     window.location.href="santaGame.html"
 }
 function goPancha(){
     window.location.href="panchatantra stories.html"
 }
+
+//function for onclick on categories
 
 function displayCategory(value){
         switch(value){

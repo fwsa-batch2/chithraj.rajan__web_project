@@ -1,3 +1,5 @@
+//validate data
+
 let storyInArray = [];
 function addStory(event) {
     event.preventDefault();
@@ -31,6 +33,8 @@ function addStory(event) {
     onPageLoad();
 }
 
+// change data into array
+
 function onPageLoad() {
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
 
@@ -44,6 +48,8 @@ function onPageLoad() {
 }
 
 onPageLoad();
+
+//validation of stories
 
 function validateStories(storyName) {
     const storyDetailsInParse = JSON.parse(localStorage.getItem("stories"));
